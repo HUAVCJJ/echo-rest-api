@@ -10,6 +10,7 @@ services:
       POSTGRES_DB: kenty
     restart: always
     networks:
-      - lesson
+      - network
 networks:
-  lesson:
+  network:
+    driver: bridge
